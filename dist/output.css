@@ -585,8 +585,20 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
+}
+
+.relative {
+  position: relative;
 }
 
 .left-0 {
@@ -599,6 +611,10 @@ video {
 
 .top-\[80px\] {
   top: 80px;
+}
+
+.z-auto {
+  z-index: auto;
 }
 
 .mx-2 {
@@ -619,6 +635,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .mt-20 {
@@ -645,6 +666,22 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
+.grid {
+  display: grid;
+}
+
+.contents {
+  display: contents;
+}
+
+.hidden {
+  display: none;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -653,16 +690,36 @@ video {
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-4\/6 {
   width: 66.666667%;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize {
+  resize: both;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .items-center {
@@ -681,6 +738,10 @@ video {
   gap: 1rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
@@ -688,6 +749,10 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-white {
@@ -705,40 +770,80 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/public\/images\/mobile\/image-hero\.jpg\'\)\] {
-  background-image: url('../public/images/mobile/image-hero.jpg');
+.bg-inherit {
+  background-color: inherit;
 }
 
-.bg-\[url\(\'\.\.\/public\/images\/mobile\/image-deep-earth\.jpg\'\)\] {
-  background-image: url('../public/images/mobile/image-deep-earth.jpg');
+.bg-\[url\(\'\/public\/images\/mobile\/image-hero\.jpg\'\)\] {
+  background-image: url('/public/images/mobile/image-hero.jpg');
 }
 
-.bg-\[url\(\'\.\.\/public\/images\/mobile\/image-night-arcade\.jpg\'\)\] {
-  background-image: url('../public/images/mobile/image-night-arcade.jpg');
+.bg-\[url\(\'\/public\/images\/mobile\/image-deep-earth\.jpg\'\)\] {
+  background-image: url('/public/images/mobile/image-deep-earth.jpg');
 }
 
-.bg-\[url\(\'\.\.\/public\/images\/mobile\/image-soccer-team\.jpg\'\)\] {
-  background-image: url('../public/images/mobile/image-soccer-team.jpg');
+.bg-\[url\(\'\/public\/images\/mobile\/image-night-arcade\.jpg\'\)\] {
+  background-image: url('/public/images/mobile/image-night-arcade.jpg');
 }
 
-.bg-\[url\(\'\.\.\/public\/images\/mobile\/image-grid\.jpg\'\)\] {
-  background-image: url('../public/images/mobile/image-grid.jpg');
+.bg-\[url\(\'\/public\/images\/mobile\/image-soccer-team\.jpg\'\)\] {
+  background-image: url('/public/images/mobile/image-soccer-team.jpg');
 }
 
-.bg-\[url\(\'\.\.\/public\/images\/mobile\/image-from-above\.jpg\'\)\] {
-  background-image: url('../public/images/mobile/image-from-above.jpg');
+.bg-\[url\(\'\/public\/images\/mobile\/image-grid\.jpg\'\)\] {
+  background-image: url('/public/images/mobile/image-grid.jpg');
 }
 
-.bg-\[url\(\'\.\.\/public\/images\/mobile\/image-pocket-borealis\.jpg\'\)\] {
-  background-image: url('../public/images/mobile/image-pocket-borealis.jpg');
+.bg-\[url\(\'\/public\/images\/mobile\/image-from-above\.jpg\'\)\] {
+  background-image: url('/public/images/mobile/image-from-above.jpg');
 }
 
-.bg-\[url\(\'\.\.\/public\/images\/mobile\/image-curiosity\.jpg\'\)\] {
-  background-image: url('../public/images/mobile/image-curiosity.jpg');
+.bg-\[url\(\'\/public\/images\/mobile\/image-pocket-borealis\.jpg\'\)\] {
+  background-image: url('/public/images/mobile/image-pocket-borealis.jpg');
 }
 
-.bg-\[url\(\'\.\.\/public\/images\/mobile\/image-fisheye\.jpg\'\)\] {
-  background-image: url('../public/images/mobile/image-fisheye.jpg');
+.bg-\[url\(\'\/public\/images\/mobile\/image-curiosity\.jpg\'\)\] {
+  background-image: url('/public/images/mobile/image-curiosity.jpg');
+}
+
+.bg-\[url\(\'\/public\/images\/mobile\/image-fisheye\.jpg\'\)\] {
+  background-image: url('/public/images/mobile/image-fisheye.jpg');
+}
+
+.bg-\[url\(\'\/images\/mobile\/image-hero\.jpg\'\)\] {
+  background-image: url('/images/mobile/image-hero.jpg');
+}
+
+.bg-\[url\(\'\/images\/mobile\/image-deep-earth\.jpg\'\)\] {
+  background-image: url('/images/mobile/image-deep-earth.jpg');
+}
+
+.bg-\[url\(\'\/images\/mobile\/image-night-arcade\.jpg\'\)\] {
+  background-image: url('/images/mobile/image-night-arcade.jpg');
+}
+
+.bg-\[url\(\'\/images\/mobile\/image-soccer-team\.jpg\'\)\] {
+  background-image: url('/images/mobile/image-soccer-team.jpg');
+}
+
+.bg-\[url\(\'\/images\/mobile\/image-grid\.jpg\'\)\] {
+  background-image: url('/images/mobile/image-grid.jpg');
+}
+
+.bg-\[url\(\'\/images\/mobile\/image-from-above\.jpg\'\)\] {
+  background-image: url('/images/mobile/image-from-above.jpg');
+}
+
+.bg-\[url\(\'\/images\/mobile\/image-pocket-borealis\.jpg\'\)\] {
+  background-image: url('/images/mobile/image-pocket-borealis.jpg');
+}
+
+.bg-\[url\(\'\/images\/mobile\/image-curiosity\.jpg\'\)\] {
+  background-image: url('/images/mobile/image-curiosity.jpg');
+}
+
+.bg-\[url\(\'\/images\/mobile\/image-fisheye\.jpg\'\)\] {
+  background-image: url('/images/mobile/image-fisheye.jpg');
 }
 
 .bg-cover {
@@ -755,10 +860,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .py-4 {
@@ -786,6 +887,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .pb-40 {
   padding-bottom: 10rem;
 }
@@ -800,6 +906,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pl-0 {
+  padding-left: 0px;
 }
 
 .text-center {
@@ -861,12 +971,21 @@ video {
   color: hsl(0 0% 55% / var(--tw-text-opacity));
 }
 
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .opacity-0 {
   opacity: 0;
 }
 
 .opacity-100 {
   opacity: 1;
+}
+
+.outline {
+  outline-style: solid;
 }
 
 .transition-all {
