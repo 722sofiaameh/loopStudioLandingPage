@@ -645,10 +645,6 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -661,12 +657,12 @@ video {
   width: 50%;
 }
 
-.cursor-pointer {
-  cursor: pointer;
+.w-4\/6 {
+  width: 66.666667%;
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .items-center {
@@ -683,10 +679,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .gap-x-12 {
@@ -761,12 +753,12 @@ video {
   padding: 1.25rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .py-4 {
@@ -914,6 +906,10 @@ video {
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -922,12 +918,20 @@ video {
     width: auto;
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:items-center {
     align-items: center;
   }
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
   }
 
   .md\:bg-inherit {
