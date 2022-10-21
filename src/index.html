@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="">
+    <header
+      class="bg-[url('../public/images/mobile/image-hero.jpg')] bg-cover bg-no-repeat pb-40"
+    >
+      <nav class="p-5 md:flex md:items-center md:justify-between gap-x-12">
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-[Poppins] cursor-pointer">
+            <img class="h-10 inline" src="../public/images/logo.svg" />
+          </div>
+          <div class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)" class="text-white">
+            </ion-icon>
+          </div>
+        </div>
+        <ul
+          class="md:flex md:items-center md:z-auto md:static absolute md:bg-inherit bg-black text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+        >
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+              >About</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+              >Careers</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+              >Events</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+              >Products</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+              >Support</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="border-white border-2 text-white uppercase p-2 w-1/2 justify-center mx-auto mt-20 text-3xl"
+      >
+        Immersive Experiences that deliver
+      </div>
+    </header>
+    <section class="mx-auto container">
+      <div class="mt-20">
+        <img src="../public/images/mobile/image-interactive.jpg" class="px-4" />
+      </div>
+      <div>
+        <h2 class="uppercase pt-12 text-center text-headingColor text-3xl">
+          The Leader In INteractive Vr
+        </h2>
+        <p class="text-center p-4 text-textColor text-lg">
+          Founded in 2011,Loopstudios has been producing world-class virtual
+          reality projects for some of the est companies around the globe.Our
+          award winning creations have transformed businesses through digital
+          experiences that bind to their brand
+        </p>
+      </div>
+    </section>
+    <section class="mx-auto container">
+      <div>
+        <h2 class="uppercase text-center pt-12 text-headingColor text-3xl">Our creations</h2>
+      </div>
+      <div class="mx-4 grid grid-cols-4 gap-10 ">
+        <div
+          class="uppercase bg-[url('../public/images/mobile/image-deep-earth.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+        >
+          Deep <br />Earth
+        </div>
+        <div
+          class="uppercase bg-[url('../public/images/mobile/image-night-arcade.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+        >
+          Night <br />Arcade
+        </div>
+
+        <div
+          class="uppercase bg-[url('../public/images/mobile/image-soccer-team.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+        >
+          Soccer <br />Team VR
+        </div>
+        <div
+          class="uppercase bg-[url('../public/images/mobile/image-grid.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+        >
+          The <br />Grid
+        </div>
+        <div
+          class="uppercase bg-[url('../public/images/mobile/image-from-above.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+        >
+          From UP <br />Above VR
+        </div>
+        <div
+          class="uppercase bg-[url('../public/images/mobile/image-pocket-borealis.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+        >
+          Pocket <br />Borealis
+        </div>
+        <div
+          class="uppercase bg-[url('../public/images/mobile/image-curiosity.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+        >
+          The <br />Curiosity
+        </div>
+        <div
+          class="uppercase bg-[url('../public/images/mobile/image-fisheye.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+        >
+          Make it <br />Fisheye
+        </div>
+      </div>
+      <div class="flex pt-8 justify-center items-center">
+        <a class="border-gray-700 border-2 px-8 py-2 mb-8 text-headingColor">See All</a>
+      </div>
+    </section>
+    <footer class="mx-auto bg-black p-4">
+      <div class="">
+        <div class="">
+          <img src="../public/images/logo.svg" class="mx-auto py-6" />
+          <ul class="text-white text-center">
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+                >About</a
+              >
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+                >Careers</a
+              >
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+                >Events</a
+              >
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+                >Products</a
+              >
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+                >Support</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="flex gap-4 items-center justify-center align-middle">
+            <img src="../public/images/icon-facebook.svg" />
+            <img src="../public/images/icon-twitter.svg" />
+            <img src="../public/images/icon-pinterest.svg"/>
+            <img src="../public/images/icon-instagram.svg" />
+          </div>
+          <p class="text-white text-center py-4">&copy; 2021 Loopstudios.All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>
