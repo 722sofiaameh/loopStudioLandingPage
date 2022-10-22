@@ -15,14 +15,16 @@
     <link href="../dist/output.css" rel="stylesheet" />
   </head>
 
-  <body class="">
+  <body class="mx-auto">
     <header
-      class="bg-[url('images/mobile/image-hero.jpg')] bg-cover bg-no-repeat pb-40"
+      class="bg-[url('../images/mobile/image-hero.jpg')] bg-cover bg-no-repeat pb-40 md:bg-[url('../images/desktop/image-hero.jpg')] md:bg-cover"
     >
-      <nav class="p-5 md:flex md:items-center md:justify-between gap-x-12">
+      <nav
+        class="p-5 md:flex md:items-center md:justify-between gap-x-12 md:py-10 md:mx-auto md:container"
+      >
         <div class="flex justify-between items-center">
           <div class="text-2xl font-[Poppins] cursor-pointer">
-            <img class="h-10 inline" src="images/logo.svg" />
+            <img class="h-10 inline" src="./images/logo.svg" />
           </div>
           <div class="text-3xl cursor-pointer mx-2 md:hidden block">
             <ion-icon name="menu" onclick="Menu(this)" class="text-white">
@@ -33,43 +35,41 @@
           class="md:flex md:items-center md:z-auto md:static absolute md:bg-inherit bg-black text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
         >
           <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500"
-              >About</a
-            >
+            <a href="#" class="text-xl hover:underline duration-500">About</a>
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500"
-              >Careers</a
-            >
+            <a href="#" class="text-xl hover:underline duration-500">Careers</a>
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500"
-              >Events</a
-            >
+            <a href="#" class="text-xl hover:underline duration-500">Events</a>
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+            <a href="#" class="text-xl hover:underline duration-500"
               >Products</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500"
-              >Support</a
-            >
+            <a href="#" class="text-xl duration-500 hover:underline">Support</a>
           </li>
         </ul>
       </nav>
-      <div
-        class="border-white border-2 text-white uppercase w-4/6 p-4 justify-center mx-auto mt-20 text-3xl"
-      >
-        Immersive Experiences that deliver
+      <div class="mx-auto container">
+        <div
+          class="border-white border-2 text-white uppercase lg:w-6/4 p-5 mt-20 text-3xl md:w-52"
+        >
+          <p class="md:mx-auto leading-9 mr-8">
+            Immersive Experiences that deliver
+          </p>
+        </div>
       </div>
     </header>
-    <section class="mx-auto container">
+    <section class="mx-auto container md:relative md:mt-52 md:my-28 md:mb-32">
       <div class="mt-20">
-        <img src="images/mobile/image-interactive.jpg" class="px-4" />
+        <img src="images/desktop/image-interactive.jpg" class="px-4" />
       </div>
-      <div>
+      <div
+        class="md:bg-white md:w-1/2 md:h-3/4 md:p-24 md:pb-0 md:text-left md:absolute md:right-52 md:top-52"
+      >
         <h2 class="uppercase pt-12 text-center text-headingColor text-3xl mx-4">
           The Leader In INteractive Vr
         </h2>
@@ -81,7 +81,7 @@
         </p>
       </div>
     </section>
-    <section class="mx-auto container">
+    <section class="mx-auto container md:mt-52">
       <div>
         <h2 class="uppercase text-center pt-12 text-headingColor text-3xl">
           Our creations
@@ -89,80 +89,81 @@
       </div>
       <div class="mx-4 md:grid md:grid-cols-4 md:gap-10">
         <div
-          class="uppercase bg-[url('images/mobile/image-deep-earth.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+          class="uppercase bg-[url('../images/mobile/image-deep-earth.jpg')] bg-cover w-50 p-4 md:p-12 text-white text-start leading-9 mt-8"
         >
           Deep <br />Earth
         </div>
         <div
-          class="uppercase bg-[url('images/mobile/image-night-arcade.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+          class="uppercase bg-[url('../images/mobile/image-night-arcade.jpg')] bg-cover w-50 p-4 md:p-12 text-white text-start leading-9 mt-8"
         >
           Night <br />Arcade
         </div>
 
         <div
-          class="uppercase bg-[url('images/mobile/image-soccer-team.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+          class="uppercase bg-[url('../images/mobile/image-soccer-team.jpg')] bg-cover md:p-12 w-50 p-4 text-white text-start leading-9 mt-8"
         >
           Soccer <br />Team VR
         </div>
         <div
-          class="uppercase bg-[url('images/mobile/image-grid.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+          class="uppercase bg-[url('../images/mobile/image-grid.jpg')] bg-cover md:p-12 w-50 p-4 text-white text-start leading-9 mt-8"
         >
           The <br />Grid
         </div>
         <div
-          class="uppercase bg-[url('images/mobile/image-from-above.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+          class="uppercase bg-[url('../images/mobile/image-from-above.jpg')] bg-cover w-50 p-4 md:p-12 text-white text-start leading-9 mt-8"
         >
           From UP <br />Above VR
         </div>
         <div
-          class="uppercase bg-[url('images/mobile/image-pocket-borealis.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+          class="uppercase bg-[url('../images/mobile/image-pocket-borealis.jpg')] bg-cover md:p-12 w-50 p-4 text-white text-start leading-9 mt-8"
         >
           Pocket <br />Borealis
         </div>
         <div
-          class="uppercase bg-[url('images/mobile/image-curiosity.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+          class="uppercase bg-[url('../images/mobile/image-curiosity.jpg')] bg-cover md:p-12 w-50 p-4 text-white text-start leading-9 mt-8"
         >
           The <br />Curiosity
         </div>
         <div
-          class="uppercase bg-[url('images/mobile/image-fisheye.jpg')] bg-cover w-50 p-4 text-white text-start leading-9 mt-8"
+          class="uppercase bg-[url('../images/mobile/image-fisheye.jpg')] bg-cover md:p-12 w-50 p-4 text-white text-start leading-9 mt-8"
         >
           Make it <br />Fisheye
         </div>
       </div>
       <div class="flex pt-8 justify-center items-center">
-        <a class="border-gray-700 border-2 px-8 py-2 mb-8 text-headingColor"
+        <a
+          class="border-gray-700 border-2 px-8 py-2 mb-8 text-headingColor hover:bg-black cursor-pointer"
           >See All</a
         >
       </div>
     </section>
     <footer class="mx-auto bg-black p-4">
-      <div class="">
+      <div class="md:flex md:justify-center gap-52 md:items-center">
         <div class="">
-          <img src="images/logo.svg" class="mx-auto py-6" />
-          <ul class="text-white text-center">
+          <div class="mx-auto "><img src="images/logo.svg" class="mx-auto " /></div>
+          <ul
+            class="text-white text-center md:flex md:justify-center md:items-center"
+          >
             <li class="mx-4 my-6 md:my-0">
-              <a href="#" class="text-xl hover:text-cyan-500 duration-500"
-                >About</a
-              >
+              <a href="#" class="text-xl hover:underline duration-500">About</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-              <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+              <a href="#" class="text-xl hover:underline duration-500"
                 >Careers</a
               >
             </li>
             <li class="mx-4 my-6 md:my-0">
-              <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+              <a href="#" class="text-xl hover:underline duration-500"
                 >Events</a
               >
             </li>
             <li class="mx-4 my-6 md:my-0">
-              <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+              <a href="#" class="text-xl hover:underline duration-500"
                 >Products</a
               >
             </li>
             <li class="mx-4 my-6 md:my-0">
-              <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+              <a href="#" class="text-xl hover:underline duration-500"
                 >Support</a
               >
             </li>
@@ -170,10 +171,18 @@
         </div>
         <div>
           <div class="flex gap-4 items-center justify-center align-middle">
-            <img src="images/icon-facebook.svg" />
-            <img src="images/icon-twitter.svg" />
-            <img src="images/icon-pinterest.svg" />
-            <img src="images/icon-instagram.svg" />
+            <a href="" class="hover:underline"
+              ><img src="images/icon-facebook.svg"
+            /></a>
+            <a href="" class="hover:underline"
+              ><img src="images/icon-twitter.svg"
+            /></a>
+            <a href="" class="hover:underline"
+              ><img src="images/icon-pinterest.svg"
+            /></a>
+            <a href="" class="hover:underline"
+              ><img src="images/icon-instagram.svg"
+            /></a>
           </div>
           <p class="text-white text-center py-4">
             &copy; 2021 Loopstudios.All rights reserved
